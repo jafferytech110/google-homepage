@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: arial, sans-serif;
+    color: #222;
+}
+.wrapper{
+    height: 100vh;
+}
+/* Navigation desgin */
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    height: 60px;    
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.left li:first-child{
+    margin-left: 20px;
+}
+
+.right{
+    margin-right: 15px;
+}
+
+#signIn{
+    background: #1a73e8;
+    color: #fff;
+    margin-left: 8px;
+    border: 1px solid transparent;
+    text-align: center;
+    padding:9px 23px;
+    border-radius: 4px;
+}
+
+section{
+    min-height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.form{
+    width: auto;
+    min-width: 584px;
+    border:1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+.form:hover{
+    box-shadow: 2px 2px 2px  #b5bac0;
+}
+.searchIcon1 i{
+    margin:12px;
+    color:#b5bac0
+}
+
+.searchIcon2 i {
+    margin: 12px;
+    color: #1a73e8;
+}
+
+
+input{
+    border: none;
+    flex: 1 1 auto;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons button{
+    background: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    padding:8px 16px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.paragraph{
+    color: #3c4043;
+
+}
+
+.paragraph p a {
+    color: blue;
+    text-decoration: none;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f2;
+    gap: 10px;
+    color: #70757a;
+    font-size: 15px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#footer .upper{
+    margin-top: 15px; 
+    margin-left: 24px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dadce0;;
+}
+
+#footer .lower{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    margin-left:15px;
+    margin-right: 20px;
+}
+
+#footer .lower li{
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 10px;
+    padding-right: 12px;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+    section{
+        min-height:400px;
+    }
+    .form{
+        min-width: 400px;
+    }
+}
