@@ -1,0 +1,1 @@
+This is google search engine type website. Very basic home Page with search option will take to the google search result.
