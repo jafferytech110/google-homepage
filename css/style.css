@@ -155,3 +155,21 @@ input:focus{
         min-width: 400px;
     }
 }
+
+@media only screen and (max-width: 400px){
+    section{
+        min-height:400px;
+    }
+    .form{
+        min-width: 300px;
+  }
+
+  .lowerLeft, .lowerRight{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .nondisplay{
+      display: none;
+  }
+}
